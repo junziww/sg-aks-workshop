@@ -60,12 +60,12 @@ variable "admin_username" {
   description = "The username assigned to the admin user on the OS of the AKS nodes if SSH access is ever needed"
 }
 variable "agent_count" {
-  default     = "3"
+  default     = "2"
   description = "The starting number of Nodes in the AKS cluster"
 }
 
 variable "vm_size" {
-  default     = "Standard_DS3_v2"
+  default     = "Standard_DS2_v2"
   description = "The Node type and size based on Azure VM SKUs Reference: az vm list-sizes --location eastus -o table"
 }
 variable "os_disk_size_gb" {
